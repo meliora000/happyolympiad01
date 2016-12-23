@@ -1,0 +1,26 @@
+<% if user_signed_in? %>
+    <li><div class="userView">
+      <div class="background">
+        <%= image_tag("office.jpg") %>
+      </div>
+      <a href="#!user"><%= image_tag(current_user.image, size: '50x50', class:"circle") if current_user.image %></a>
+      <a href="#!name"><span class="white-text name"><%= current_user.name %></span></a>
+      <a href="#!email"><span class="white-text email"><%= current_user.email %></span></a>
+    </div></li>
+
+    <li><a href="#">내꿈보기</a></li>
+    <li><div class="divider"></div></li>
+    <li><%= link_to Category.first.title,Category.first %></li>
+    <li><%= link_to Category.third.title,Category.third %></li>
+    <li><%= link_to Category.second.title,Category.second %></li>
+    <li><div class="divider"></div></li>
+    <li><%= link_to '로그아웃', destroy_user_session_path, method: :delete %></li>
+
+<% else %>
+
+    <li><%= link_to "페이스북 로그인", user_facebook_omniauth_authorize_path %></li>
+    <li><%= link_to "로그인",new_user_session_path %></li>
+    <li><%= link_to "회원가입", new_user_registration_path %></li>
+
+
+<% end %>

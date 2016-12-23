@@ -1,0 +1,27 @@
+<li class="main_menu"><a href="/about">소개글</a></li>
+<li class="text-white jak main_menu"><a class='dropdown-button light-blue darken-4' href='#' data-activates='dropdown1'>역대 수상작품</a></li>
+<li class="text-white"><a href="/posts" class="text-white">2017작품</a></li>
+<li><a>갤러리</a></li>
+<li><a>Q&A</a></li>
+
+
+<!-- Dropdown Trigger -->
+
+
+<!-- Dropdown Structure -->
+<ul id='dropdown1' class='dropdown-content light-blue darken-4'>
+  <li class="text-black"><a href="#!">2012</a></li>
+  <li><a href="#!">2013</a></li>
+  <li><a href="#!">2014</a></li>
+  <li><a href="#!">2015</a></li>
+  <li><a href="#!">2016</a></li>
+</ul>
+
+<script>
+  $(".jak").hover(function(){
+    $('.dropdown-button').dropdown('open');
+  })
+  $(".jak").mouseleave(function(){
+    $('.dropdown-button').dropdown('close');
+  })
+</script>

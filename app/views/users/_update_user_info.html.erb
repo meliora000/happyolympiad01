@@ -1,0 +1,33 @@
+<div class="animated fadeInLeft">
+
+<h3 style="color:white">꼭 입력해주세요</h3>
+
+<%= form_for(current_user, remote: true) do |f| %>
+    <div class="row name-box" style="width:300px; position:relative">
+      <div class="input-field col s12">
+        <%= f.text_field :name %>
+        <label class="active" for="first_name2">이름</label>
+</div>
+      <div class="input-field col s12">
+        <%= f.text_field :school_name %>
+        <label class="active" for="first_name2">학교이름</label>
+</div>
+
+      <div class="input-field col s12">
+        <%= f.select(:is_student,[["학생",1],["선생님",2],["학부모",3]]) %>
+      </div>
+
+          <%= button_tag(:class => "waves-effect waves-light btn name-submit-btn") do %>
+              submit
+          <% end %>
+
+      </div>
+    </div>
+<% end %>
+
+</div>
+<script>
+  $(document).ready(function () {
+    $('select').material_select();
+  });
+</script>

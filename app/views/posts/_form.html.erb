@@ -1,0 +1,64 @@
+
+<%= form_for (@post) do |f| %>
+
+    <div class="row">
+      <div class="input-field col s6 center">
+        <div class="input-field col s12 m12 l8">
+          <%= f.text_area :name, :id => "textarea1", :class => "materialize-textarea" %>
+          <label for="textarea1">이름</label>
+        </div>
+      </div>
+      <div class="input-field col s6 center">
+        <div class="input-field col s12 m12 l8">
+          <%= f.text_area :school, :id => "textarea2", :class => "materialize-textarea" %>
+          <label for="textarea2">학교</label>
+        </div>
+      </div>
+      <div class="input-field col s6 center">
+        <div class="input-field col s12 m12 l8">
+          <%= f.text_area :year, :id => "textarea3", :class => "materialize-textarea" %>
+          <label for="textarea3">년도</label>
+        </div>
+      </div>
+      <div class="input-field col s6 center">
+        <div class="input-field col s12 m12 l8">
+          <%= f.text_area :content, :id => "textarea4", :class => "materialize-textarea" %>
+          <label for="textarea4">행복십계명,UCC(유투브주소)</label>
+        </div>
+      </div>
+
+      <div class="file-field input-field col s6 center">
+        <div class="input-field col s12 m12 l8">
+
+
+          <div class="btn">
+            <span>File</span>
+            <input type="file">
+          </div>
+          <div class="file-path-wrapper">
+            <%= f.file_field :avatar, :class=>"file-path validate" %>
+            <%= f.hidden_field :avatar_cache %>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="input-field col s6 center">
+        <div class="input-field col s12 m12 l8">
+          <%= f.text_area :name, :id => "textarea1", :class => "materialize-textarea" %>
+          <label for="textarea1">type</label>
+        </div>
+      </div>
+
+      <div class="input-field col s6 center">
+        <div class="input-field col s12 m12 l8">
+          <%= f.text_area :name, :id => "textarea1", :class => "materialize-textarea" %>
+          <label for="textarea1">rank</label>
+          <%= f.submit "Create" %>
+        </div>
+      </div>
+    </div>
+
+
+
+<% end %>

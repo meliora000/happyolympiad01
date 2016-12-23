@@ -1,0 +1,9 @@
+<p>
+	<%= link_to "/profile/#{comment.user.id}" do %>
+		<strong><%= comment.user.name %></strong> 
+	<% end %>
+	<%= comment.content %>
+	<% if comment.user == current_user %>
+		<%= link_to 'Del', post_comment_path(comment.post, comment), method: :delete %>
+	<% end %>
+</p>

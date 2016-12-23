@@ -1,0 +1,219 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_self
+ *= require materialize/dist/css/materialize
+ *= require animate.css/animate
+ */
+
+
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+a:link {
+  color: black;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+.main_menu a:link{
+  color:white
+}
+.main_menu a:visited{
+  color:white
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+}
+
+/* selected link */
+a:active {
+  color: black;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: white;
+}
+
+#sign_in{
+  color:white;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+.parallax-container .section {
+  width: 100%;
+}
+
+.pd_t-30{
+  padding-top: 30px;
+}
+.pd_t-15{
+  padding-top: 15px;
+}
+.pd_t-5{
+  padding-top: 5px;
+}
+.pd_b-10{
+  padding-bottom: 10px;
+}
+
+.pd_l-10{
+  padding-left: 10px;
+}
+
+.pd_l-15{
+  padding-left: 15px;
+}
+
+.pd_r-15{
+  padding-right:15px;
+}
+
+
+.pd_nb-15{
+  padding-bottom: -15px;
+}
+
+.pd_nt-15{
+  padding-top: -15px;
+}
+
+.mg_l-20{
+  margin-left:20px;
+}
+
+.mg_r-10{
+  margin-right:10px;
+}
+
+.mg_r-15{
+  margin-right:15px;
+}
+
+.mg_r-20{
+  margin-right:20px;
+}
+
+.mg_nt-15{
+  margin-top: -15px;
+}
+
+
+.user-section li{
+  position:absolute;
+  right:0;
+  top:0;
+}
+
+#welcome_letter{
+  -vendor-animation-delay: 2s;
+}
+
+#user_ename{
+  color:white
+}
+#update_user_info{
+  background-color: rgba(0,0,0,.7);
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0;
+  right:0;
+  z-index: 500;
+}
+
+.main_page1{
+  background-image: image-url("dream.jpg");
+  height:500px;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+
+
+
+footer.page-footer {
+  margin: 0;
+}
+
+/* label color */
+.input-field label {
+  color: #000;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color: #000;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+/* valid color */
+.input-field input[type=text].valid {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #000;
+}
+
+
+#apply_button{
+  position:fixed;
+  right:50px;
+  bottom:50px;
+}

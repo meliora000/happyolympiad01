@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>행복올림피아드</title>
+    <%= csrf_meta_tags %>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <nav class="light-blue darken-4" role="navigation">
+    <div class="nav-wrapper"><a id="logo-container" href="/" class="brand-logo mg_l-20">대한민국 청소년 행복올림피아드</a>
+      <ul class="right hide-on-med-and-down mg_r-20">
+        <%= render 'layouts/navbar' %>
+      </ul>
+
+
+      <ul id="slide-out" class="side-nav" style="transform: translateX(-100%);">
+        <%= render 'layouts/navbar_mobile' %>
+      </ul>
+      <a href="#" data-activates="slide-out" class="right button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+
+  <%= yield %>
+
+
+  <footer class="page-footer light-blue darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">사단법인 행복한교사실천모임</h5>
+          <p class="grey-text text-lighten-4">저희들은 아이들의 꿈이 잘자라 현실이 될때까지 함께 하겠습니다</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">연락처</h5>
+          <ul>
+            <li>전화: 032-111-1111</li>
+            <li>email: joseph_lee1@naver.com 2</li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <div class="hiddendiv common"></div><div class="drag-target" data-sidenav="nav-mobile" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div>
+  </body>
+
+</html>
