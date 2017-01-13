@@ -217,3 +217,11 @@ footer.page-footer {
   right:50px;
   bottom:50px;
 }
+
+
+
+@media (min-width: 991px) {
+  main,header,footer {
+    padding-left: 300px;
+  }
+}
