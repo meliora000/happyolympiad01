@@ -1,27 +1,31 @@
-<div class="col s12 m12 l8">
+<div class="col s12 m12 l6">
   <div class="card light-blue lighten-3">
     <div class="card-content white-text" style="padding:0px; padding-left: 10px;">
-      <div class="card-title">
-        <div class="chip">
-          <a>
-            <%= post.name %>
-          </a>
-        </div>
-        <div class="chip">
-          <%= post.school %>
-        </div>
-        <div class="chip">
-          <%= post.year %>
-        </div>
-      </div>
-
+      <!--<div class="card-title">-->
+        <!--<div class="chip">-->
+          <!--<a>-->
+            <!--<%= post.name %>-->
+          <!--</a>-->
+        <!--</div>-->
+        <!--<div class="chip">-->
+          <!--<%= post.school %>-->
+        <!--</div>-->
+        <!--<div class="chip">-->
+          <!--<%= post.year %>-->
+        <!--</div>-->
+      <!--</div>-->
+      <% if @genre == "tenth" %>
       <div class="card-content">
-        <p><%= simple_format(post.content) %></p>
+        <%= image_tag(post.avatar_url,style: 'width:100%',class:"materialboxed") if post.avatar? %>
       </div>
+      <% end %>
 
-      <div class="card-content">
-        <%= image_tag(post.avatar_url) if post.avatar? %>
-      </div>
+
+      <% if @genre == "ppt" %>
+          <div class="card-content">
+            <%= asset_path post.avatar_url if post.avatar? %>
+          </div>
+      <% end %>
     </div>
 
 

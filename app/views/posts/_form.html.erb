@@ -27,26 +27,22 @@
         </div>
       </div>
 
-      <div class="file-field input-field col s6 center">
-        <div class="input-field col s12 m12 l8">
-
-
-          <div class="btn">
-            <span>File</span>
-            <input type="file">
-          </div>
-          <div class="file-path-wrapper">
-            <%= f.file_field :avatar, :class=>"file-path validate" %>
-            <%= f.hidden_field :avatar_cache %>
-          </div>
-        </div>
-
-      </div>
 
       <div class="input-field col s6 center">
         <div class="input-field col s12 m12 l8">
-          <%= f.text_area :name, :id => "textarea1", :class => "materialize-textarea" %>
+          <%= f.text_area :genre, :id => "textarea1", :class => "materialize-textarea" %>
           <label for="textarea1">type</label>
+        </div>
+      </div>
+
+      <div class="input-field col s6 center">
+        <div class="btn waves-effect waves-light">
+          <i class="material-icons right">attach_file</i>
+          <span>File</span>
+          <%= f.file_field :avatar %>
+        </div>
+        <div class="file-path-wrapper">
+          <input class="file-path validate" type="text">
         </div>
       </div>
 

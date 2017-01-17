@@ -8,15 +8,18 @@ class PostsController < ApplicationController
     @posts = Post.all
   end
 
+  def happytenth
+    @posts = Post.all
+  end
+
+
+
   def dance
 
   end
 
   def show
-    respond_to do |format|
-      format.html
-      format.json { render json: @post}
-    end
+
   end
 
   def new
@@ -61,11 +64,17 @@ class PostsController < ApplicationController
 
   private
   def set_post
-    @post = posts.find(params[:id])
+    @posts = Post.where(genre:params[:id])
+    if params[:id] == "1"
+      @genre = "tenth"
+    elsif params[:id] == "2"
+      @genre = "ppt"
+    end
+
   end
 
   def post_params
-    params.require(:post).permit(:name, :school, :year, :content, :rank, :type, :avatar)
+    params.require(:post).permit(:name, :school, :year, :content, :rank, :genre, :avatar)
   end
 end
 
