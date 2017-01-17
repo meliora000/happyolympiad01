@@ -1,8 +1,15 @@
 Rails.application.routes.draw do
 
+  get 'galleries/index'
+
+  get 'galleries/new'
+
+  get 'galleries/create'
+
   get 'welcome/index'
 
   get 'about', to: 'welcome#about'
+  get 'gallery', to: "welcome#gallery"
 
   get 'categories/show'
 
@@ -14,6 +21,7 @@ Rails.application.routes.draw do
 
   resources :posts
   resources :users
+  resources :galleries
 
   get '/profile/:user_id' => 'profile#show'
 
