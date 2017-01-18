@@ -22,6 +22,19 @@ nav .brand-logo {
   color: #444;
 }
 
+.side-nav{
+  background-image: image_url("menubar_image.jpg");
+  padding-top:20px;
+}
+
+.side-nav li{
+  text-align: center;
+}
+
+.side-nav li a{
+  color : #ffffff !important;
+}
+
 .materialboxed{
   width:100%;
 }

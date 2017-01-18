@@ -69,6 +69,8 @@ class PostsController < ApplicationController
       @genre = "tenth"
     elsif params[:id] == "2"
       @genre = "ppt"
+    elsif params[:id] == "3"
+      @genre = "movie"
     end
 
   end

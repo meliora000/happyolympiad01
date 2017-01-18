@@ -1,19 +1,17 @@
 <div class="col s12 m12 l6">
   <div class="card light-blue lighten-3">
     <div class="card-content white-text" style="padding:0px; padding-left: 10px;">
-      <!--<div class="card-title">-->
-        <!--<div class="chip">-->
-          <!--<a>-->
-            <!--<%= post.name %>-->
-          <!--</a>-->
-        <!--</div>-->
-        <!--<div class="chip">-->
-          <!--<%= post.school %>-->
-        <!--</div>-->
-        <!--<div class="chip">-->
-          <!--<%= post.year %>-->
-        <!--</div>-->
-      <!--</div>-->
+      <div class="card-title">
+        <div class="chip">
+            <%= post.name %>
+        </div>
+        <div class="chip">
+          <%= post.school %>
+        </div>
+        <div class="chip">
+          <%= post.year %>
+        </div>
+      </div>
       <% if @genre == "tenth" %>
       <div class="card-content">
         <%= image_tag(post.avatar_url,style: 'width:100%',class:"materialboxed") if post.avatar? %>
@@ -24,6 +22,12 @@
       <% if @genre == "ppt" %>
           <div class="card-content">
             <%= asset_path post.avatar_url if post.avatar? %>
+          </div>
+      <% end %>
+
+      <% if @genre == "movie" %>
+          <div class="card-content">
+          <iframe width="100%" height="300px" src="<%= post.content %>" frameborder="no" scrolling="no"></iframe>
           </div>
       <% end %>
     </div>
