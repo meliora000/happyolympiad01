@@ -22,6 +22,6 @@ class GalleriesController < ApplicationController
 
   private
   def gallery_params
-    params.require(:gallery).permit(:year, :avatar)
+    params.require(:gallery).permit(:year, {avatars: []})
   end
 end

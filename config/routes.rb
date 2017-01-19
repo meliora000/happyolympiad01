@@ -8,14 +8,18 @@ Rails.application.routes.draw do
 
   get 'welcome/index'
 
+  get '/posts/:year/:genre', to: "posts#show", as:'post'
+
   get 'about', to: 'welcome#about'
   get 'gallery', to: "welcome#gallery"
+  get 'qa', to: 'welcome#qa'
 
   get 'categories/show'
 
   get 'users/index'
 
   get 'users/show'
+
 
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 
@@ -25,7 +29,7 @@ Rails.application.routes.draw do
       get 'happytenth'
     end
   end
-  resources :users
+  # resources :users!
   resources :galleries
 
   get '/profile/:user_id' => 'profile#show'

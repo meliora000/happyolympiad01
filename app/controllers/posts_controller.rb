@@ -64,15 +64,12 @@ class PostsController < ApplicationController
 
   private
   def set_post
-    @posts = Post.where(genre:params[:id])
-    if params[:id] == "1"
-      @genre = "tenth"
-    elsif params[:id] == "2"
-      @genre = "ppt"
-    elsif params[:id] == "3"
-      @genre = "movie"
+    if params[:year].present?
+      @posts = Post.where(year:params[:year]).where(genre:params[:genre])
+      @genre = params[:genre]
+    else
+      @posts = Post.where(year:params[:id])
     end
-
   end
 
   def post_params

@@ -1,17 +1,20 @@
 <div class="section">
   <div class="row">
     <div class="col s12 l12">
-      <iframe width="100%" height="500" src="https://www.youtube.com/embed/fQ_zV9xlU34" frameborder="0" allowfullscreen></iframe>
+      <iframe width="100%" height="500" src="https://www.youtube.com/embed/tJjfYtT0UuI?autoplay=1" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
   <div class="row">
     <% @galls.each do |gall| %>
+        <% if gall.avatars.present? %>
+          <% gall.avatars.each do |g| %>
+        <div class="col s12 l6" style="padding:15px;">
 
-        <div class="col s12 l6">
-          <% if gall.avatar.present? %>
-              <%= image_tag(gall.avatar, :class => "picture", style: 'width:100%',class:"materialboxed") %>
-          <% end %>
+            <%= image_tag(g.url, :class => "picture", style: 'width:100%',class:"materialboxed") %>
         </div>
+            <% end %>
+        <% end %>
+
 
     <% end %>
   </div>

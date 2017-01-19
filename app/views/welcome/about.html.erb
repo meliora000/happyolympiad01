@@ -2,7 +2,42 @@
   <div class="section">
 
     <div class="row">
-      <%= image_tag("HAPPYOLYMPIAD04.jpg",class:"materialboxed",width:"100%") %>
+      <div class="col l12 s12 m12">
+        <div class="slider">
+          <ul class="slides">
+            <li>
+              <%= image_tag("1.JPG") %><!-- random image -->
+              <div class="caption center-align">
+                <!--<h3>This is our big Tagline!</h3>-->
+                <!--<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>-->
+              </div>
+            </li>
+            <li>
+              <%= image_tag("2.JPG") %> <!-- random image -->
+              <div class="caption left-align">
+                <!--<h3>Left Aligned Caption</h3>-->
+                <!--<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>-->
+              </div>
+            </li>
+            <li>
+              <%= image_tag("3.JPG") %> <!-- random image -->
+              <div class="caption right-align">
+                <!--<h3>Right Aligned Caption</h3>-->
+                <!--<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>-->
+              </div>
+            </li>
+            <li>
+              <%= image_tag("4.JPG") %> <!-- random image -->
+              <div class="caption center-align">
+                <!--<h3>This is our big Tagline!</h3>-->
+                <!--<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>-->
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!--<%= image_tag("HAPPYOLYMPIAD04.jpg",class:"materialboxed",width:"100%") %>-->
     </div>
 
     <div class="container">
@@ -18,11 +53,11 @@
     </div>
     </div>
 
-    <div class="row">
-      <div class="col s12 l12">
-        <iframe width="100%" height="500" src="https://www.youtube.com/embed/fQ_zV9xlU34" frameborder="0" allowfullscreen></iframe>
-      </div>
-    </div>
+    <!--<div class="row">-->
+      <!--<div class="col s12 l12">-->
+        <!--<iframe width="100%" height="500" src="https://www.youtube.com/embed/fQ_zV9xlU34" frameborder="0" allowfullscreen></iframe>-->
+      <!--</div>-->
+    <!--</div>-->
 
 
 
@@ -30,6 +65,10 @@
 <script>
   $(document).ready(function(){
     $('.materialboxed').materialbox();
+  });
+
+  $(document).ready(function(){
+    $('.slider').slider({full_width: true});
   });
 </script>
 

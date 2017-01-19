@@ -11,7 +11,7 @@
   <body>
   <header>
   <nav class="amber lighten-5 top-nav" role="navigation">
-    <div class="nav-wrapper"><a id="logo-container" href="/" class="brand-logo mg_l-20 center" style="margin-top: -37px;"><%= image_tag("logo.png",width:"600px") %></a>
+    <div class="nav-wrapper"><a id="logo-container" href="/" class="brand-logo mg_l-20 center" style=" margin-top: 0px;"><%= image_tag("logo.png",width:"600px") %></a>
       <ul class="right hide-on-med-and-down mg_r-20">
         <%= render 'layouts/navbar' %>
       </ul>
@@ -33,18 +33,22 @@
   <footer class="page-footer amber lighten-5">
     <div class="container">
       <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">사단법인 행복한교사실천모임</h5>
-          <a href="http://cafe.naver.com/coomida/"><p class="grey-text text-lighten-4">행복올림피아드 네이버 카페</p></a>
+        <div class="col l12 s12">
+          <%= image_tag("footer_image.png",width:"100%") %>
+        </div>
+
+        <!--<div class="col l6 s12">-->
+          <!--<h5 class="white-text">사단법인 행복한교사실천모임</h5>-->
+          <!--<a href="http://cafe.naver.com/coomida/"><p class="grey-text text-lighten-4">행복올림피아드 네이버 카페</p></a>-->
 
 
-        </div>
-        <div class="col l3 s12 white-text">
-          <h5>연락처</h5>
-          <ul>
-            <li>email: sm92@naver.com</li>
-          </ul>
-        </div>
+        <!--</div>-->
+        <!--<div class="col l3 s12 white-text">-->
+          <!--<h5>연락처</h5>-->
+          <!--<ul>-->
+            <!--<li>email: sm92@naver.com</li>-->
+          <!--</ul>-->
+        <!--</div>-->
         <!--<div class="col l3 s12">-->
           <!--<h5 class="white-text">Connect</h5>-->
           <!--<ul>-->

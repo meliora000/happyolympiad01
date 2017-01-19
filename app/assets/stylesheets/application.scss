@@ -241,3 +241,11 @@ footer.page-footer {
     padding-left: 300px;
   }
 }
+
+@media (max-width:500px){
+  .nav-wrapper img{
+    width:360px !important;
+    margin-left: -60px;
+    margin-top: 10px;
+  }
+}
