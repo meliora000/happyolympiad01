@@ -5,10 +5,7 @@ require "active_record/railtie"
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
-
-require File.expand_path('../boot', __FILE__)
-require 'rails/all'
-Bundler.require(:default, Rails.env) if defined?(Bundler)
+Bundler.require(*Rails.groups)
 
 module Betterlog
   class Application < Rails::Application
