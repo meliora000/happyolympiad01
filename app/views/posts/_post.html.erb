@@ -40,7 +40,7 @@
           </div>
           <% if post.genre == 1 %>
               <div class="card-content">
-                <%= image_tag(post.avatar_url,style: 'width:100%',class:"materialboxed") if post.avatar? %>
+                <%= image_tag(post.avatar,style: 'width:100%',class:"materialboxed") if post.avatar? %>
               </div>
           <% end %>
 
