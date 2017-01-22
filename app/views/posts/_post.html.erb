@@ -12,6 +12,9 @@
             <div class="chip">
               <%= post.year %>
             </div>
+            <div class="chip">
+                <a href="/posts/<%= post.id %>/edit">수정</a>
+            </div>
           </div>
 
 
@@ -36,6 +39,9 @@
             </div>
             <div class="chip">
               <%= post.year %>
+            </div>
+            <div class="chip">
+              <a href="/posts/<%= post.id %>/edit">수정</a>
             </div>
           </div>
           <% if post.genre == 1 %>

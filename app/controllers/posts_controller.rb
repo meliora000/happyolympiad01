@@ -1,11 +1,12 @@
 class PostsController < ApplicationController
   # before_action :authenticate_user!, except: [:index]
-  before_action :set_post, only: [:show, :edit, :update, :destroy]
+  before_action :set_index_post, only: [:index]
+  before_action :set_post, only: [:show]
+  before_action :find_post, only: [:edit, :update]
 
 
 
   def index
-    @posts = Post.all
   end
 
   def happytenth
@@ -27,6 +28,7 @@ class PostsController < ApplicationController
   end
 
   def edit
+    @post
   end
 
   def create
@@ -45,7 +47,12 @@ class PostsController < ApplicationController
   def update
     respond_to do |format|
       if @post.update(post_params)
-        format.html { redirect_to [@post], notice: 'Post was successfully updated.' }
+        if @post == 2016
+          format.html { redirect_to "/posts/shows/" + @post.year.to_s + "/" + @post.genre.to_s }
+        else
+          format.html { redirect_to "/posts/shows/" + @post.year.to_s }
+
+        end
         format.json { render :show, status: :ok, location: @post }
       else
         format.html { render :edit }
@@ -70,6 +77,14 @@ class PostsController < ApplicationController
     else
       @posts = Post.where(year:params[:id])
     end
+  end
+
+  def set_index_post
+    @posts = Post.where(year:params[:year])
+  end
+
+  def find_post
+    @post = Post.find(params[:id])
   end
 
   def post_params
