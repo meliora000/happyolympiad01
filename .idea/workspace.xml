@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9dc28f8-64c3-4205-be66-54ea0ba6bf23" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/post/avatar/1/coomida-03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/post/avatar/5/coomida-01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/post/avatar/7/피에로.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/post/avatar/8/coomida-04.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/post/avatar/8/coomida-01.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/posts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_navbar.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_navbar.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_navbar_mobile.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_navbar_mobile.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/posts/_post.html.erb" afterPath="$PROJECT_DIR$/app/views/posts/_post.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
     </list>
     <ignored path="betterlog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,18 +40,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_navbar.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/_navbar.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-              <folding>
-                <marker date="1485113930000" expanded="false" signature="1431:1446" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="application.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
@@ -71,21 +50,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_navbar_mobile.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/_navbar_mobile.html.erb">
+      <file leaf-file-name="posts_controller.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="420">
+              <caret line="49" column="29" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="posts_controller.rb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
+      <file leaf-file-name="image_uploader.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/uploaders/image_uploader.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="52" column="71" selection-start-line="52" selection-start-column="71" selection-end-line="52" selection-end-column="71" />
+            <state relative-caret-position="0">
+              <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="carrierwave.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$USER_HOME$/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/carrierwave-1.0.0.rc/lib/carrierwave.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="40" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -516,7 +505,7 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$USER_HOME$/december/josephlee" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="routes&#9;FILE&#9;file:///Users/mac/betterlog/config/routes.rb&#10;post&#9;FILE&#9;file:///Users/mac/betterlog/app/controllers/posts_controller.rb&#10;routesr&#9;FILE&#9;file:///Users/mac/betterlog/config/routes.rb&#10;routs&#9;null&#9;null&#10;ro&#9;FILE&#9;file:///Users/mac/betterlog/config/routes.rb&#10;produ&#9;FILE&#9;file:///Users/mac/betterlog/config/environments/production.rb&#10;carrierwave.rb&#9;FILE&#9;file:///Users/mac/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/carrierwave-1.0.0.rc/lib/carrierwave.rb&#10;boot.rb&#9;FILE&#9;file:///Users/mac/betterlog/config/boot.rb&#10;application.rb&#9;FILE&#9;file:///Users/mac/betterlog/config/application.rb&#10;config.ru&#9;FILE&#9;file:///Users/mac/betterlog/config.ru&#10;avatar&#9;null&#9;null&#10;production.rb&#9;FILE&#9;file:///Users/mac/betterlog/config/environments/production.rb&#10;datab&#9;FILE&#9;file:///Users/mac/betterlog/config/database.yml&#10;post con&#9;FILE&#9;file:///Users/mac/betterlog/app/controllers/posts_controller.rb&#10;con&#9;FILE&#9;file:///Users/mac/betterlog/app/controllers/posts_controller.rb&#10;route&#9;FILE&#9;file:///Users/mac/betterlog/config/routes.rb&#10;cont&#9;FILE&#9;file:///Users/mac/betterlog/app/controllers/posts_controller.rb&#10;post co&#9;FILE&#9;file:///Users/mac/betterlog/app/controllers/posts_controller.rb&#10;routes.r&#9;FILE&#9;file:///Users/mac/betterlog/config/routes.rb&#10;ontroller&#9;FILE&#9;file:///Users/mac/betterlog/app/controllers/posts_controller.rb&#10;database&#9;FILE&#9;file:///Users/mac/betterlog/config/database.yml&#10;contro&#9;FILE&#9;file:///Users/mac/betterlog/app/controllers/posts_controller.rb&#10;rou&#9;FILE&#9;file:///Users/mac/betterlog/config/routes.rb&#10;routes.rb&#9;FILE&#9;file:///Users/mac/betterlog/config/routes.rb&#10;nav&#9;FILE&#9;file:///Users/mac/betterlog/app/views/layouts/_navbar.html.erb&#10;gemfile&#9;FILE&#9;file:///Users/mac/betterlog/Gemfile&#10;config/datab&#9;FILE&#9;file:///Users/mac/betterlog/config/database.yml&#10;config/en&#9;FILE&#9;file:///Users/mac/betterlog/config/environment.rb&#10;bower.j&#9;FILE&#9;file:///Users/mac/betterlog/bower.json&#10;bowerrc&#9;FILE&#9;file:///Users/mac/betterlog/.bowerrc&#10;postcon&#9;FILE&#9;file:///Users/mac/betterlog/app/controllers/posts_controller.rb&#10;appcon&#9;FILE&#9;file:///Users/mac/betterlog/app/controllers/application_controller.rb&#10;application.yml&#9;FILE&#9;file:///Users/mac/betterlog/config/application.yml&#10;gem&#9;FILE&#9;file:///Users/mac/betterlog/Gemfile&#10;database.ym&#9;FILE&#9;file:///Users/mac/betterlog/config/database.yml&#10;appl&#9;FILE&#9;file:///Users/mac/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/figaro-1.1.1/lib/figaro/cli/install/application.yml&#10;application.y&#9;FILE&#9;file:///Users/mac/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/figaro-1.1.1/lib/figaro/cli/install/application.yml" />
+    <property name="SearchEverywhereHistoryKey" value="carrier&#9;FILE&#9;file:///Users/mac/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/carrierwave-1.0.0.rc/lib/carrierwave.rb&#10;imageup&#9;null&#9;null&#10;routes&#9;FILE&#9;file:///Users/mac/betterlog/config/routes.rb&#10;post&#9;FILE&#9;file:///Users/mac/betterlog/app/controllers/posts_controller.rb&#10;routesr&#9;FILE&#9;file:///Users/mac/betterlog/config/routes.rb&#10;routs&#9;null&#9;null&#10;ro&#9;FILE&#9;file:///Users/mac/betterlog/config/routes.rb&#10;produ&#9;FILE&#9;file:///Users/mac/betterlog/config/environments/production.rb&#10;carrierwave.rb&#9;FILE&#9;file:///Users/mac/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/carrierwave-1.0.0.rc/lib/carrierwave.rb&#10;boot.rb&#9;FILE&#9;file:///Users/mac/betterlog/config/boot.rb&#10;application.rb&#9;FILE&#9;file:///Users/mac/betterlog/config/application.rb&#10;config.ru&#9;FILE&#9;file:///Users/mac/betterlog/config.ru&#10;avatar&#9;null&#9;null&#10;production.rb&#9;FILE&#9;file:///Users/mac/betterlog/config/environments/production.rb&#10;datab&#9;FILE&#9;file:///Users/mac/betterlog/config/database.yml&#10;post con&#9;FILE&#9;file:///Users/mac/betterlog/app/controllers/posts_controller.rb&#10;con&#9;FILE&#9;file:///Users/mac/betterlog/app/controllers/posts_controller.rb&#10;route&#9;FILE&#9;file:///Users/mac/betterlog/config/routes.rb&#10;cont&#9;FILE&#9;file:///Users/mac/betterlog/app/controllers/posts_controller.rb&#10;post co&#9;FILE&#9;file:///Users/mac/betterlog/app/controllers/posts_controller.rb&#10;routes.r&#9;FILE&#9;file:///Users/mac/betterlog/config/routes.rb&#10;ontroller&#9;FILE&#9;file:///Users/mac/betterlog/app/controllers/posts_controller.rb&#10;database&#9;FILE&#9;file:///Users/mac/betterlog/config/database.yml&#10;contro&#9;FILE&#9;file:///Users/mac/betterlog/app/controllers/posts_controller.rb&#10;rou&#9;FILE&#9;file:///Users/mac/betterlog/config/routes.rb&#10;routes.rb&#9;FILE&#9;file:///Users/mac/betterlog/config/routes.rb&#10;nav&#9;FILE&#9;file:///Users/mac/betterlog/app/views/layouts/_navbar.html.erb&#10;gemfile&#9;FILE&#9;file:///Users/mac/betterlog/Gemfile&#10;config/datab&#9;FILE&#9;file:///Users/mac/betterlog/config/database.yml&#10;config/en&#9;FILE&#9;file:///Users/mac/betterlog/config/environment.rb&#10;bower.j&#9;FILE&#9;file:///Users/mac/betterlog/bower.json&#10;bowerrc&#9;FILE&#9;file:///Users/mac/betterlog/.bowerrc&#10;postcon&#9;FILE&#9;file:///Users/mac/betterlog/app/controllers/posts_controller.rb&#10;appcon&#9;FILE&#9;file:///Users/mac/betterlog/app/controllers/application_controller.rb&#10;application.yml&#9;FILE&#9;file:///Users/mac/betterlog/config/application.yml&#10;gem&#9;FILE&#9;file:///Users/mac/betterlog/Gemfile&#10;database.ym&#9;FILE&#9;file:///Users/mac/betterlog/config/database.yml&#10;appl&#9;FILE&#9;file:///Users/mac/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/figaro-1.1.1/lib/figaro/cli/install/application.yml&#10;application.y&#9;FILE&#9;file:///Users/mac/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/figaro-1.1.1/lib/figaro/cli/install/application.yml" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
@@ -761,16 +750,16 @@
       <workItem from="1484340763825" duration="15430000" />
       <workItem from="1484731606155" duration="7138000" />
       <workItem from="1484809220964" duration="1254000" />
-      <workItem from="1484811386676" duration="8968000" />
+      <workItem from="1484811386676" duration="9573000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104468000" />
+    <option name="totallyTimeSpent" value="105073000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24921875" sideWeight="0.7921147" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -830,13 +819,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/post.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/environment.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1075,14 +1057,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/carrierwave-1.0.0.rc/lib/carrierwave.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="40" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/uploaders/avatar_uploader.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1199,8 +1173,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="52" column="71" selection-start-line="52" selection-start-column="71" selection-end-line="52" selection-end-column="71" />
+        <state relative-caret-position="420">
+          <caret line="49" column="29" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/uploaders/image_uploader.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/carrierwave-1.0.0.rc/lib/carrierwave.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="40" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="40" />
           <folding />
         </state>
       </provider>

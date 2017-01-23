@@ -47,7 +47,7 @@ class PostsController < ApplicationController
   def update
     respond_to do |format|
       if @post.update(post_params)
-        if @post == 2016
+        if @post.year == 2016
           format.html { redirect_to "/posts/shows/" + @post.year.to_s + "/" + @post.genre.to_s }
         else
           format.html { redirect_to "/posts/shows/" + @post.year.to_s }
