@@ -1,70 +1,101 @@
+<div class="nav-content">
+  <ul class="tabs tabs-transparent">
+    <li class="tab" id="tab1"><a class="active" href="#test1">행복 십계명</a></li>
+    <li class="tab" id="tab2"><a href="#test4">Presentation</a></li>
+    <li class="tab" id="tab3"><a href="#test2">UCC</a></li>
+  </ul>
+</div>
 
 <%= form_for (@post) do |f| %>
 
     <div class="row">
-      <div class="input-field col s6 center">
-        <div class="input-field col s12 m12 l8">
+      <div class="input-field col s12 center">
+        <div class="input-field col s12 m6 l4">
           <%= f.text_area :name, :id => "textarea1", :class => "materialize-textarea" %>
           <label for="textarea1">이름</label>
         </div>
       </div>
-      <div class="input-field col s6 center">
-        <div class="input-field col s12 m12 l8">
+      <div class="input-field col s12 center">
+        <div class="input-field col s12 m6 l4">
           <%= f.text_area :school, :id => "textarea2", :class => "materialize-textarea" %>
           <label for="textarea2">학교</label>
         </div>
       </div>
-      <div class="input-field col s6 center">
-        <div class="input-field col s12 m12 l8">
-          <%= f.text_area :year, :id => "textarea3", :class => "materialize-textarea" %>
-          <label for="textarea3">년도</label>
-        </div>
-      </div>
-      <div class="input-field col s6 center">
+      <!--<div class="input-field col s6 center">-->
+        <!--<div class="input-field col s12 m12 l8">-->
+          <!--<%= f.text_area :year, :id => "textarea3", :class => "materialize-textarea" %>-->
+          <!--<label for="textarea3">년도</label>-->
+        <!--</div>-->
+      <!--</div>-->
+      <div class="input-field col s12 center youtube_link_input">
         <div class="input-field col s12 m12 l8">
           <%= f.text_area :content, :id => "textarea4", :class => "materialize-textarea" %>
-          <label for="textarea4">행복십계명,UCC(유투브주소)</label>
+          <label for="textarea4">UCC(유투브주소)</label>
         </div>
       </div>
 
 
-      <div class="input-field col s6 center">
-        <div class="input-field col s12 m12 l12">
-          <%= f.text_area :genre, :id => "textarea1", :class => "materialize-textarea" %>
-          <label for="textarea1">type</label>
-        </div>
-      </div>
+      <!--<div class="input-field col s6 center">-->
+        <!--<div class="input-field col s12 m12 l12">-->
+          <!--<%= f.text_area :genre, :id => "textarea1", :class => "materialize-textarea" %>-->
+          <!--<label for="textarea1">type</label>-->
+        <!--</div>-->
+      <!--</div>-->
 
-      <div class="input-field col s6 center">
-        <div class="input-field col s12 m12 l12">
-      <%= f.text_area :rank, :id => "textarea1", :class => "materialize-textarea" %>
-      <label for="textarea1">rank</label>
+      <!--<div class="input-field col s6 center">-->
+        <!--<div class="input-field col s12 m12 l12">-->
+      <!--<%= f.text_area :rank, :id => "textarea1", :class => "materialize-textarea" %>-->
+      <!--<label for="textarea1">rank</label>-->
 
-          </div>
-        </div>
+          <!--</div>-->
+        <!--</div>-->
     </div>
 
-    <div class="row">
+    <div class="input-field col s12 m6 l4 center file_input">
       <div class="file-field input-field">
         <div class="btn waves-effect waves-light">
           <i class="material-icons right">attach_file</i>
           <span>File</span>
           <%= f.file_field :avatar %>
         </div>
-        <div class="file-path-wrapper">
+        <div class="file-path-wrapper col s12 m6 l4">
           <input class="file-path validate" type="text">
         </div>
       </div>
     </div>
 
 
-    <div class="row">
-      <div class="input-field col s6 center">
-        <div class="input-field col s12 m12 l8">
-          <%= f.submit "Create" %>
+    <div class="button_right_bottom">
+          <%= button_tag(type:"submit",class: "btn-floating btn-large waves-effect waves-light") do %>
+              <i class="material-icons">add</i>
+          <% end %>
         </div>
-      </div>
-    </div>
+
 
 
 <% end %>
+
+
+<script>
+
+  $( document ).ready(function() {
+    $(".youtube_link_input").hide();
+  });
+
+  $("#tab3").click(function(){
+    $(".youtube_link_input").show();
+    $(".file_input").hide();
+  })
+
+    $("#tab1").click(function(){
+      $(".file_input").show();
+      $(".youtube_link_input").hide();
+
+    })
+
+  $("#tab2").click(function(){
+    $(".file_input").show();
+    $(".youtube_link_input").hide();
+
+  })
+</script>
