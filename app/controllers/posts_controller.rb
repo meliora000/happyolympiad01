@@ -34,6 +34,7 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
+    @post.year = 2017
     respond_to do |format|
       if @post.save
         format.html { redirect_to posts_path}
