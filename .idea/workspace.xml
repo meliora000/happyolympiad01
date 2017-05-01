@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9dc28f8-64c3-4205-be66-54ea0ba6bf23" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/posts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/posts/_post.html.erb" afterPath="$PROJECT_DIR$/app/views/posts/_post.html.erb" />
-    </list>
+    <list default="true" id="f9dc28f8-64c3-4205-be66-54ea0ba6bf23" name="Default" comment="" />
     <ignored path="betterlog.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -672,12 +668,12 @@
       <workItem from="1493436975217" duration="1880000" />
       <workItem from="1493442609847" duration="608000" />
       <workItem from="1493565067316" duration="474000" />
-      <workItem from="1493579294024" duration="495000" />
+      <workItem from="1493579294024" duration="561000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121580000" />
+    <option name="totallyTimeSpent" value="121646000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="29" y="23" width="1119" height="773" extended-state="0" />
